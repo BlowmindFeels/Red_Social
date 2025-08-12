@@ -7,7 +7,7 @@
 
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background-color: #2c4f6b;
     padding: 20px;
 }
 
@@ -15,7 +15,7 @@ body {
 .profile-container {
     max-width: 800px;
     margin: auto;
-    background: #fff;
+    background: #e1fbff;
     border-radius: 10px;
     overflow: hidden;
     padding: 20px;
@@ -24,6 +24,24 @@ body {
 /* Cabecera */
 header {
     text-align: center;
+}
+.btn-back {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #285d72; /* verde medio */
+    color: #e0e0e0;
+    font-weight: bold;
+    border-radius: 8px;
+    text-decoration: none;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    user-select: none;
+    
+}
+
+.btn-back:hover {
+    background-color: #304966; 
+    transform: scale(1.05);
 }
 header img {
     width: 120px;
