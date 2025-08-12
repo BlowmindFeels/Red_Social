@@ -1,0 +1,83 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+/* Contenedor del perfil */
+.profile-container {
+    max-width: 800px;
+    margin: auto;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 20px;
+}
+
+/* Cabecera */
+header {
+    text-align: center;
+}
+header img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+header h1 {
+    margin-top: 10px;
+    color: #333;
+}
+
+/* Texto */
+main p {
+    margin: 15px 0;
+    line-height: 1.5;
+    color: #555;
+}
+
+/* Menú */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 15px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #007BFF;
+    font-weight: bold;
+}
+
+/* Galería Mobile First */
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+.galeria img {
+    width: 100%;
+    max-width: 200px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    transition: transform 0.3s ease;
+}
+.galeria img:hover {
+    transform: scale(1.05);
+}
+
+/* Escritorio */
+@media (min-width: 768px) {
+    .galeria img {
+        max-width: 250px;
+    }
+}
